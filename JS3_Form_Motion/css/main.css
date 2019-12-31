@@ -1,0 +1,15 @@
+
+h1, h2{
+    text-align: center;
+}
+
+legend{
+    font-weight: bold;
+}
+#submit{
+    background-color: yellow;
+}
+
+#describe{
+    display: none;
+}

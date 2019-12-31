@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey_Form</title>
+    <link rel='stylesheet' href='css/main.css'>
+</head>
+
+<body>
+    <h1>Tell us your opinion</h1>
+
+    <form id="survey">
+        <fieldset>
+            <legend> Gender </legend>
+            <input type="radio" name="man" value="man1" />Man
+            <input type="radio" name="man" value="man2" />Woman
+            <input type="radio" name="man" value="man3" />Other
+        </fieldset>
+
+        <fieldset>
+
+            <legend> Age </legend>
+            <select id="age"><br>
+                <option value='0'>Click here</option>
+                <option>less than 18</option>
+                <option>18-25</option>
+                <option>26-34</option>
+                <option>35-55</option>
+                <option>56+</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend> Do you like fruits?</legend>
+            <input type="radio" name="check" id="yes" />Y
+            <input type="radio" name="check" id="no" /> N
+
+        </fieldset>
+
+        <fieldset id="fruits">
+
+            <legend> Select fruits </legend>
+            <input type="checkbox" name="fruit" value="apple">Apple
+            <input type="checkbox" name="fruit" value="pear">Pear
+            <input type="checkbox" name="fruit" value="banana">Banana
+            <input type="checkbox" name="fruit" value="peach">Peach
+            <input type="checkbox" name="fruit" value="mango">Mango
+
+        </fieldset>
+
+        <fieldset id="vegis">
+
+            <legend> Add vegitables </legend>
+            <select multiple size="6" id="vegi">
+                <option name="vegi" value="tomato">Tomato</option>
+                <option name="vegi" value="cucumber">Cucumber</option>
+                <option name="vegi" value="carrot">Carrot</option>
+                <option name="vegi" value="lettuce">Lettuce</option>
+                <option name="vegi" value="onion">Onion</option>
+                <option name="vegi" value="none">None</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset id='field'>
+
+            <legend> Opinion</legend>
+            <textarea id="describe" rows="10" cols="80"
+                placeholder="Tell us that you have any allergy, disease, or heredopathia.."></textarea>
+
+            <input type="button" id="next" value="NEXT" />
+
+        </fieldset>
+
+
+        <br><input type="button" id="submit" value="Submit" />
+    </form>
+
+    <script src='javascript/survey_form.js'></script>
+</body>
+
+</html>
